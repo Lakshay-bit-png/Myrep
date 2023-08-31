@@ -1,0 +1,42 @@
+.side-nav-container li {
+    cursor: pointer;
+    margin: 23px;
+    display: flex;
+    align-items: center;
+}
+
+.side-nav-container>li:hover span {
+    font-weight: 800;
+}
+
+.side-nav-container img {
+    transition: transform 0.2s linear;
+}
+
+.side-nav-container li:hover img {
+    transform: scale(1.3);
+}
+
+.side-nav-container>li>img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.side-nav-container .logo {
+    height: 60px;
+    width: 44px;
+}
+
+.side-nav-container {
+    float: left;
+    background: white;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    width: 300px;
+}
+
+@media only screen and (max-width:1355px){
+    .side-nav-container{display:none;}
+}
